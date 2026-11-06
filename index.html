@@ -1,0 +1,2056 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>银发合作报告 · 幕景宇宙</title>
+<style>
+  @font-face {
+    font-family: "Alibaba PuHuiTi 3.0";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("assets/fonts/puhuiti-55.woff2?v=20261106c") format("woff2");
+  }
+  @font-face {
+    font-family: "Alibaba PuHuiTi 3.0";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("assets/fonts/puhuiti-65.woff2?v=20261106c") format("woff2");
+  }
+  :root {
+    --bg: #F6F5F3;
+    --ink: #1A1A1C;
+    --body: #3D3A35;
+    --muted: #6A655F;
+    --line: #C9C5BE;
+    --soft: #EDEBE7;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Alibaba PuHuiTi 3.0", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 72px 56px 80px;
+  }
+  .brand {
+    display: inline-block;
+    color: var(--ink);
+    text-decoration: none;
+    margin: 0 0 30px;
+  }
+  .brand svg { display: block; height: 32px; width: auto; }
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: .18em;
+    color: var(--muted);
+    margin: 0 0 24px;
+  }
+  h1 {
+    font-size: 58px;
+    line-height: 1.16;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+    max-width: 860px;
+    text-wrap: balance;
+  }
+  .dek {
+    font-size: 21px;
+    line-height: 1.65;
+    color: var(--body);
+    max-width: 780px;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+  .cover-facts { margin: 42px 0 34px; }
+  .cover-fact {
+    display: grid;
+    grid-template-columns: 136px minmax(0, 1fr);
+    gap: 0 28px;
+    padding: 18px 0 20px;
+    border-top: 1px solid var(--line);
+  }
+  .cover-fact:last-child { border-bottom: 1px solid var(--line); }
+  .cover-fact-label {
+    font-size: 12px;
+    letter-spacing: .18em;
+    color: var(--muted);
+    margin: 4px 0 0;
+    white-space: nowrap;
+  }
+  .cover-fact-body p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--body);
+    margin: 0 0 10px;
+    max-width: 700px;
+  }
+  .cover-fact-body p:last-child { margin-bottom: 0; }
+  .cover-fact-body .cover-team { font-size: 13.5px; color: var(--muted); }
+  .nowrap { white-space: nowrap; }
+  .cover-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 28px;
+    font-size: 12px;
+    letter-spacing: .06em;
+    color: var(--muted);
+    margin: 0;
+  }
+  .cover-meta a {
+    color: var(--muted);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 3px;
+  }
+  .cover-meta a:hover { color: var(--ink); }
+
+  .now { margin: 46px 0 0; }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 48px;
+    margin: 0 0 18px;
+  }
+  .stat {
+    padding: 16px 0 0;
+    border-top: 1px solid var(--ink);
+  }
+  .stat-num {
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums;
+    margin: 0 0 6px;
+  }
+  .stat-num em {
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0;
+    color: var(--muted);
+    margin-left: 5px;
+  }
+  .stat-label { font-size: 14.5px; color: var(--body); margin: 0 0 2px; }
+  .stat-meta { font-size: 12.5px; color: var(--muted); margin: 0 0 6px; }
+  .stat-src { font-size: 11px; letter-spacing: .08em; color: var(--muted); margin: 0; }
+  .stats-note {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--body);
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 16px 20px 18px;
+    margin: 18px 0 0;
+    max-width: 780px;
+  }
+
+  .block-label {
+    font-size: 12px;
+    letter-spacing: .18em;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  .toc {
+    margin: 46px 0 0;
+    padding: 24px 0 30px;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--line);
+  }
+  .toc-label {
+    font-size: 12px;
+    letter-spacing: .18em;
+    color: var(--muted);
+    margin: 0 0 16px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px 32px;
+  }
+  .toc-grid a {
+    display: block;
+    color: var(--ink);
+    text-decoration: none;
+    padding: 0 0 10px;
+    border-bottom: 1px solid var(--soft);
+  }
+  .toc-grid a:hover { border-bottom-color: var(--ink); }
+  .toc-grid b {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .toc-grid span {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  section.block { margin-top: 76px; }
+  .section-head { margin-bottom: 32px; }
+  .section-head h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin: 0 0 10px;
+    letter-spacing: .01em;
+  }
+  .section-head p {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 760px;
+    margin: 0;
+  }
+
+  .pains {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 48px;
+  }
+  .pain {
+    padding: 18px 0 20px;
+    border-top: 1px solid var(--line);
+  }
+  .pain figure { margin: 0 0 14px; }
+  .pain figure img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .pain-credit {
+    font-size: 11px;
+    color: var(--muted);
+    margin: 12px 0 0;
+  }
+  .pain h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 6px;
+  }
+  .pain p { margin: 0; font-size: 15px; color: var(--body); }
+
+  .works { display: grid; }
+  .work {
+    border-top: 1px solid var(--ink);
+    padding: 30px 0 46px;
+  }
+  .work-media { margin: 0; display: grid; gap: 10px; }
+  .work-shot {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: #E3E1DD;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+  .work-shot video,
+  .work-shot img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .work-tag {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 10.5px;
+    letter-spacing: .06em;
+    color: #fff;
+    background: rgba(22, 22, 24, .62);
+    padding: 3px 7px;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .work-zoom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 10.5px;
+    letter-spacing: .06em;
+    color: #fff;
+    background: rgba(22, 22, 24, .62);
+    padding: 3px 7px;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .thumbs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .thumb {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+    cursor: zoom-in;
+    font: inherit;
+  }
+  .thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: var(--soft);
+  }
+  .thumb:hover img { opacity: .84; }
+  .thumb span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .work-credit {
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--muted);
+    margin: 2px 0 0;
+  }
+  .work-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 0 16px;
+  }
+  .work h3 { font-size: 24px; font-weight: 500; margin: 0; }
+  .stage {
+    font-size: 12px;
+    color: var(--muted);
+    white-space: nowrap;
+    letter-spacing: .06em;
+  }
+  .stage::before {
+    content: "";
+    display: inline-block;
+    width: 6px; height: 6px;
+    margin-right: 6px;
+    border: 1px solid var(--muted);
+    vertical-align: 1px;
+  }
+  .stage.live::before { background: var(--muted); }
+  .work p { margin: 0; font-size: 15.5px; color: var(--body); max-width: 640px; }
+  .work-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 264px;
+    gap: 8px 40px;
+    align-items: start;
+    margin-top: 18px;
+  }
+  .work .maps {
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--ink);
+    padding-top: 9px;
+    margin: 0;
+  }
+
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    place-items: center;
+    background: rgba(16, 16, 18, .93);
+    padding: 40px 28px 28px;
+  }
+  .lightbox.on { display: grid; }
+  .lightbox figure {
+    margin: 0;
+    max-width: min(1200px, 94vw);
+    text-align: center;
+  }
+  .lightbox img,
+  .lightbox video {
+    display: block;
+    max-width: 100%;
+    max-height: min(76vh, 760px);
+    margin: 0 auto;
+    background: #000;
+  }
+  .lightbox figcaption {
+    margin-top: 12px;
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #D9D5CE;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    border: 0;
+    background: none;
+    color: #F2EFEA;
+    font: inherit;
+    font-size: 13px;
+    letter-spacing: .08em;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .lb-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: rgba(255, 255, 255, .08);
+    color: #F2EFEA;
+    font: inherit;
+    font-size: 20px;
+    line-height: 1;
+    width: 40px;
+    height: 56px;
+    cursor: pointer;
+  }
+  .lb-arrow:hover { background: rgba(255, 255, 255, .18); }
+  .lb-prev { left: 12px; }
+  .lb-next { right: 12px; }
+  .lightbox.no-nav .lb-arrow { display: none; }
+
+  .person {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 24px;
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 24px 28px 26px;
+    margin: 0 0 16px;
+  }
+  .person .label {
+    font-size: 12px;
+    letter-spacing: .12em;
+    color: var(--muted);
+    padding-top: 4px;
+  }
+  .person p { margin: 0; font-size: 15px; color: var(--body); max-width: 660px; }
+  .person .key {
+    font-size: 23px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 12px;
+    max-width: 660px;
+  }
+
+  .moment {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 24px;
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 26px 28px 28px;
+    margin: 0 0 16px;
+  }
+  .time {
+    font-size: 14px;
+    color: var(--muted);
+    padding-top: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .moment h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--body);
+    margin: 0 0 10px;
+  }
+  .moment p {
+    margin: 0 0 12px;
+    font-size: 15px;
+    color: var(--body);
+    max-width: 680px;
+  }
+  .moment p strong { font-weight: 500; color: var(--ink); }
+  .moment .key {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 16px;
+    max-width: 680px;
+  }
+  .status {
+    font-size: 13px;
+    line-height: 1.9;
+    color: var(--muted);
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    max-width: 680px;
+  }
+  .k {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    padding: 0 5px;
+    margin-right: 5px;
+    line-height: 18px;
+    vertical-align: 1px;
+  }
+  .k.done { background: var(--ink); color: #F6F5F3; border-color: var(--ink); }
+  .moment .seen {
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--muted);
+    margin: -6px 0 12px;
+    max-width: 680px;
+  }
+  .moment .seen b { font-weight: 500; color: var(--ink); }
+
+  .illus { margin: 0 0 18px; max-width: 680px; }
+  .illus img { display: block; width: 100%; height: auto; }
+  .illus figcaption {
+    font-size: 11px;
+    letter-spacing: .04em;
+    color: var(--muted);
+    margin-top: 7px;
+  }
+
+  /* 卡片：浅米底 + 小圆角，无边框、无阴影、无序号 */
+  .card {
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 24px 28px 26px;
+    margin: 0 0 16px;
+  }
+  .card > :last-child { margin-bottom: 0; }
+  .subhead + .card { margin-top: 16px; }
+
+  /* 每块的重心句：从原文里抽出来放大，不新写文案 */
+  .key {
+    font-size: 23px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 14px;
+    max-width: 660px;
+  }
+
+  .countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  .country { border-top: 1px solid var(--ink); padding-top: 20px; }
+  .country h3 {
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    letter-spacing: .04em;
+  }
+  .tagline {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .fact { padding: 12px 0; border-top: 1px dotted var(--line); }
+  .fact:first-of-type { border-top: 0; padding-top: 0; }
+  .fact dt {
+    font-size: 12px;
+    letter-spacing: .12em;
+    color: var(--muted);
+    margin: 0 0 3px;
+  }
+  .fact dd { margin: 0; font-size: 15px; color: var(--body); }
+  .fact dd strong { font-weight: 500; color: var(--ink); }
+  .gap { color: var(--muted); }
+
+  .same {
+    margin-top: 44px;
+    padding: 24px 28px 26px;
+    background: var(--soft);
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--body);
+  }
+  .same strong { font-weight: 500; color: var(--ink); }
+  .same > p { margin: 0 0 12px; }
+  .same > p:last-child { margin-bottom: 0; }
+  .boundary-line {
+    margin-top: 16px;
+    padding: 24px 28px 26px;
+    background: var(--soft);
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--body);
+  }
+  .boundary-line > p { margin: 0 0 12px; }
+  .boundary-line > p:last-child { margin-bottom: 0; }
+  .boundary-line strong { font-weight: 500; color: var(--ink); }
+  .boundary-line .key { margin-bottom: 12px; color: var(--body); }
+
+  .subhead {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 48px 0 6px;
+  }
+  .sublede {
+    font-size: 15px;
+    color: var(--muted);
+    max-width: 780px;
+    margin: 0 0 20px;
+  }
+
+  .research {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 52px;
+    align-items: start;
+  }
+  .finding { padding: 15px 0 17px; border-top: 1px solid var(--line); }
+  .finding:first-child { border-top: 1px solid var(--ink); }
+  .finding h3 { font-size: 17px; font-weight: 500; margin: 0 0 6px; }
+  .finding p { font-size: 14.5px; color: var(--body); margin: 0 0 6px; }
+  .finding .src { font-size: 11.5px; color: var(--muted); }
+
+  .effect { margin: 0; padding: 15px 0 0; border-top: 1px solid var(--ink); }
+  .effect figcaption b { display: block; font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+  .effect figcaption span {
+    display: block;
+    font-size: 11.5px;
+    line-height: 1.55;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .effect-row {
+    display: grid;
+    grid-template-columns: 74px 1fr 84px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+  .effect-label { font-size: 12.5px; color: var(--body); }
+  .effect-track { position: relative; height: 16px; }
+  .effect-track::before {
+    content: "";
+    position: absolute;
+    left: 16.7%;
+    top: -5px;
+    bottom: -5px;
+    border-left: 1px solid var(--line);
+  }
+  .effect-ci { position: absolute; top: 7px; height: 2px; background: var(--line); }
+  .effect-dot {
+    position: absolute;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+  .effect-dot.ns { background: var(--bg); border: 1px solid var(--muted); }
+  .effect-val {
+    font-size: 12px;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    line-height: 1.35;
+  }
+  .effect-val em {
+    display: block;
+    font-style: normal;
+    font-size: 10.5px;
+    color: var(--muted);
+  }
+  .effect-note {
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 6px 0 0;
+    padding-top: 10px;
+    border-top: 1px dotted var(--line);
+  }
+
+  .reach {
+    margin: 26px 0 16px;
+    padding: 24px 28px 26px;
+    background: var(--soft);
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--body);
+  }
+  .reach > p { margin: 0; }
+  .reach .key { margin-bottom: 12px; }
+  .reach strong { font-weight: 500; color: var(--ink); }
+
+  .cases { margin-top: 2px; }
+  .case {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 44px;
+    padding: 28px 0 30px;
+    border-top: 1px solid var(--line);
+  }
+  .case:first-child { border-top: 1px solid var(--ink); }
+  .case figure {
+    margin: 0;
+    height: 260px;
+    background: var(--soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .case figure img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .case .where {
+    font-size: 11.5px;
+    letter-spacing: .12em;
+    color: var(--muted);
+    margin: 0 0 2px;
+  }
+  .case h3 { font-size: 21px; font-weight: 500; margin: 0 0 8px; }
+  .case p { font-size: 15px; color: var(--body); margin: 0 0 8px; max-width: 580px; }
+  .case .take {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    gap: 8px;
+    font-size: 14px;
+    margin: 0 0 4px;
+  }
+  .case .take b { font-weight: 500; color: var(--ink); }
+  .case .take.no { color: var(--muted); }
+  .case .take.no b { color: var(--muted); }
+  .case .credit { font-size: 11px; color: var(--muted); margin: 10px 0 0; }
+  .case .credit a { color: var(--muted); text-underline-offset: 2px; }
+  .case-media { cursor: zoom-in; }
+  .case-media button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    cursor: zoom-in;
+  }
+  .case-media:hover img { opacity: .9; }
+
+  .labs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 44px;
+  }
+  .lab { padding: 26px 0 28px; border-top: 1px solid var(--ink); }
+  .lab figure {
+    margin: 0 0 16px;
+    height: 210px;
+    background: var(--soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .lab figure img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .lab .where {
+    font-size: 11.5px;
+    letter-spacing: .12em;
+    color: var(--muted);
+    margin: 0 0 2px;
+  }
+  .lab h4 { font-size: 18px; font-weight: 500; margin: 0 0 8px; }
+  .lab p { font-size: 14.5px; color: var(--body); margin: 0 0 7px; }
+  .lab .take {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 8px;
+    font-size: 13.5px;
+    margin: 0 0 4px;
+  }
+  .lab .take b { font-weight: 500; color: var(--ink); }
+  .lab .take.no { color: var(--muted); }
+  .lab .take.no b { color: var(--muted); }
+  .lab .credit { font-size: 11px; color: var(--muted); margin: 8px 0 0; }
+
+  .video { margin: 38px 0 0; padding-top: 22px; border-top: 1px solid var(--ink); }
+  .video video {
+    display: block;
+    width: 100%;
+    max-width: 860px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #000;
+  }
+  .video figcaption {
+    display: grid;
+    gap: 3px;
+    max-width: 860px;
+    padding-top: 12px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .video figcaption b { font-size: 14.5px; font-weight: 500; color: var(--ink); }
+  .video figcaption a { color: var(--muted); }
+
+  .ideas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 44px;
+  }
+  .idea { padding: 17px 0 19px; border-top: 1px solid var(--line); }
+  .idea h4 {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 6px;
+  }
+  .idea p { font-size: 14.5px; color: var(--body); margin: 0 0 6px; }
+  .idea .why { font-size: 13px; color: var(--muted); margin: 0; }
+
+  .rules {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 44px;
+  }
+  .rules li {
+    font-size: 14.5px;
+    color: var(--body);
+    padding: 11px 0;
+    border-top: 1px dotted var(--line);
+  }
+  .card .rules li:first-child,
+  .card .rules li:nth-child(2) { border-top: 0; padding-top: 0; }
+
+  .next-inline {
+    margin: 32px 0 0;
+    padding: 24px 28px 26px;
+    background: var(--soft);
+    border-radius: 4px;
+    font-size: 15.5px;
+    color: var(--body);
+  }
+  .next-inline strong { font-weight: 500; color: var(--ink); }
+  .next-inline > p { margin: 0 0 12px; }
+  .next-inline > p:last-child { margin-bottom: 0; }
+
+  .pkgs { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .pkg {
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 24px 24px 26px;
+  }
+  .pkg h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 12px;
+  }
+  .pkg .key {
+    font-size: 22px;
+    line-height: 1.55;
+    max-width: none;
+    margin: 0 0 20px;
+  }
+  .pkg-specs { display: grid; gap: 14px; margin: 0; }
+  .pkg-specs dt {
+    font-size: 11.5px;
+    letter-spacing: .12em;
+    color: var(--muted);
+    margin: 0 0 2px;
+  }
+  .pkg-specs dd { font-size: 14.5px; line-height: 1.6; color: var(--body); margin: 0; }
+
+  .pilot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .pilot-grid > div {
+    background: var(--soft);
+    border-radius: 4px;
+    padding: 24px 26px 2px;
+  }
+  .pilot-grid h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 12px;
+  }
+  .pilot-grid ul {
+    margin: 0 0 22px;
+    padding-left: 18px;
+    font-size: 15px;
+    color: var(--body);
+  }
+  .pilot-grid li { margin: 0 0 6px; }
+  .pilot-grid .plain { margin: 0 0 24px; font-size: 15px; color: var(--body); }
+  .next {
+    margin-top: 16px;
+    padding: 26px 28px 28px;
+    background: var(--soft);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--body);
+  }
+  .next strong { font-weight: 500; color: var(--ink); }
+  .next > p { margin: 0 0 12px; }
+  .next > p:last-child { margin-bottom: 0; }
+  .next .key { margin-bottom: 12px; max-width: none; }
+
+  .sources {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--muted);
+  }
+  .sources h2 {
+    font-size: 12px;
+    letter-spacing: .12em;
+    font-weight: 500;
+    margin: 0 0 8px;
+  }
+  .sources ol { margin: 0; padding-left: 18px; }
+  .sources li { margin: 0 0 3px; }
+  .sources a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    overflow-wrap: anywhere;
+  }
+  .img-note {
+    margin: 14px 0 0;
+    padding-top: 10px;
+    border-top: 1px dotted var(--line);
+    font-size: 11px;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+  .sign {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: .06em;
+    margin-top: 36px;
+  }
+
+  @media (max-width: 860px) {
+    .page { padding: 48px 24px 56px; }
+    .brand { margin-bottom: 24px; }
+    .brand svg { height: 28px; }
+    h1 { font-size: 37px; }
+    .dek { font-size: 17.5px; }
+    .cover-facts { margin: 30px 0 26px; }
+    .cover-fact { grid-template-columns: 1fr; gap: 8px; padding: 16px 0 18px; }
+    .cover-fact-label { margin: 0; }
+    .cover-fact-body .cover-team { font-size: 13px; line-height: 1.7; }
+    .cover-meta { font-size: 11.5px; gap: 4px 20px; }
+    .now { margin-top: 34px; }
+    .stats { grid-template-columns: 1fr; gap: 0; margin: 0 0 16px; }
+    .stat { padding: 14px 0 16px; }
+    .stat-num { font-size: 34px; }
+    .stats-note { font-size: 13px; }
+    .video { margin-top: 30px; }
+    .video figcaption { font-size: 12px; }
+    section.block { margin-top: 56px; }
+    .section-head { margin-bottom: 24px; }
+    .section-head h2 { font-size: 25px; }
+    .pains { grid-template-columns: 1fr; }
+    .pain figure img { height: 220px; }
+    .pain-credit { font-size: 11px; line-height: 1.6; }
+    .works { gap: 0; }
+    .work { padding: 24px 0 34px; }
+    .thumbs { grid-template-columns: repeat(2, 1fr); gap: 10px 10px; }
+    .thumb span { font-size: 12px; }
+    .work-body {
+      grid-template-columns: 1fr;
+      gap: 6px;
+      margin-top: 14px;
+    }
+    .work .maps { margin-top: 8px; }
+    .work h3 { font-size: 21px; }
+    .lightbox { padding: 52px 12px 18px; }
+    .lb-arrow { display: none; }
+    .person, .moment { grid-template-columns: 1fr; gap: 6px; padding: 22px 20px 24px; }
+    .person .label { padding-top: 0; }
+    .time { padding-top: 0; }
+    .countries { grid-template-columns: 1fr; gap: 40px; }
+    .subhead { margin-top: 40px; font-size: 19px; }
+    .research { grid-template-columns: 1fr; gap: 30px; }
+    .case { grid-template-columns: 1fr; gap: 14px; padding: 22px 0 26px; }
+    .case figure { height: 250px; }
+    .case .take b { min-width: 60px; }
+    .labs { grid-template-columns: 1fr; gap: 0; }
+    .lab figure { height: 230px; }
+    .lab .take b { min-width: 56px; }
+    .ideas { grid-template-columns: 1fr; }
+    .rules { grid-template-columns: 1fr; }
+    .card, .reach, .same, .boundary-line, .next, .next-inline { padding: 22px 20px 24px; }
+    .card .rules li:nth-child(2) { border-top: 1px dotted var(--line); padding-top: 11px; }
+    .key { font-size: 20px; }
+    .moment .key, .person .key { font-size: 20px; }
+    .pkgs { grid-template-columns: 1fr; gap: 14px; }
+    .pkg { padding: 22px 20px 24px; }
+    .pkg .key { font-size: 20px; margin-bottom: 18px; }
+    .pilot-grid { grid-template-columns: 1fr; gap: 14px; }
+    .pilot-grid > div { padding: 22px 20px 2px; }
+    .stats-note { padding: 14px 18px 16px; margin-top: 14px; }
+    .sources { margin-top: 48px; }
+    .toc-grid { grid-template-columns: repeat(2, 1fr); gap: 14px 24px; }
+    .toc { margin-top: 26px; padding-bottom: 22px; }
+  }
+  @media print {
+    body { background: #fff; }
+    .page { padding: 24px; }
+    .toc { display: none; }
+    .work, .moment, .country, .pain, .case, .lab, .idea, .finding, .stats, .video { break-inside: avoid; }
+    .card, .reach, .same, .boundary-line, .next, .next-inline, .pkg, .pilot-grid > div { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="cover">
+    <a class="brand" href="https://mujing-universe.pages.dev/" target="_blank" rel="noopener" aria-label="幕景宇宙官网">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="169.5 -8.1 514.7 174.8" aria-hidden="true" focusable="false">
+<defs><style>
+@font-face{font-family:"MJ Serif";src:url(data:font/woff2;base64,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AY4AAwABBAkACgGEA2oAAwABBAkACwA6BO4AAwABBAkADAA0BSgAAwABBAkADQKWBVwAAwABBAkADgA0B/IAAwABBAkAEQAUCCYAAwABBAkBAAAOAG4AAwABBAkBBgAQCDoAAwABBAkBCQAMCEoAqQAgADIAMAAxADcALQAyADAAMgAzACAAQQBkAG8AYgBlACAAKABoAHQAdABwADoALwAvAHcAdwB3AC4AYQBkAG8AYgBlAC4AYwBvAG0ALwApAC4ATgBvAHQAbwAgAFMAZQByAGkAZgAgAFMAQwBSAGUAZwB1AGwAYQByADIALgAwADAAMgA7AEcATwBPAEcAOwBOAG8AdABvAFMAZQByAGkAZgBTAEMALQBFAHgAdAByAGEATABpAGcAaAB0ADsAQQBEAE8AQgBFAFYAZQByAHMAaQBvAG4AIAAyAC4AMAAyADsAMgA0ADEAMQAxADQAMgAwADQANQA1ADgAOwBuAG8AbgAtAHIAZQBsAGUAYQBzAGUATgBvAHQAbwBTAGUAcgBpAGYAUwBDAC0ARQB4AHQAcgBhAEwAaQBnAGgAdABOAG8AdABvACAAaQBzACAAYQAgAHQAcgBhAGQAZQBtAGEAcgBrACAAbwBmACAARwBvAG8AZwBsAGUAIABJAG4AYwAuAEEAZABvAGIAZQBSAHkAbwBrAG8AIABOAEkAUwBIAEkAWgBVAEsAQQAgiX9YWm28W1AAIAAoAGsAYQBuAGEAIAAmACAAaQBkAGUAbwBnAHIAYQBwAGgAcwApADsAIABGAHIAYQBuAGsAIABHAHIAaQBlAN8AaABhAG0AbQBlAHIAIAAoAEwAYQB0AGkAbgAsACAARwByAGUAZQBrACAAJgAgAEMAeQByAGkAbABsAGkAYwApADsAIABXAGUAbgBsAG8AbgBnACAAWgBIAEEATgBHACBfIGWHn5kAIAAoAGIAbwBwAG8AbQBvAGYAbwApADsAIABTAGEAbgBkAG8AbABsACAAQwBvAG0AbQB1AG4AaQBjAGEAdABpAG8AbgBzACDAsLPMzuS7pLLIzwDHdMFYACwAIABTAG8AbwBoAHkAdQBuACAAUABBAFIASwAgvBXCGNYEACwAIABZAGUAagBpAG4AIABXAEUAIMcExgjJxAAgACYAIABEAG8AbgBnAGgAbwBvAG4AIABIAEEATgAg1Vyz2dbIACAAKABoAGEAbgBnAHUAbAAgAGUAbABlAG0AZQBuAHQAcwAsACAAbABlAHQAdABlAHIAcwAgACYAIABzAHkAbABsAGEAYgBsAGUAcwApAEQAcgAuACAASwBlAG4AIABMAHUAbgBkAGUAIAAoAHAAcgBvAGoAZQBjAHQAIABhAHIAYwBoAGkAdABlAGMAdAAsACAAZwBsAHkAcABoACAAcwBlAHQAIABkAGUAZgBpAG4AaQB0AGkAbwBuACAAJgAgAG8AdgBlAHIAYQBsAGwAIABwAHIAbwBkAHUAYwB0AGkAbwBuACkAOwAgAE0AYQBzAGEAdABhAGsAYQAgAEgAQQBUAFQATwBSAEkAIGcNkOhrY4y0ACAAKABwAHIAbwBkAHUAYwB0AGkAbwBuACAAJgAgAGkAZABlAG8AZwByAGEAcABoACAAZQBsAGUAbQBlAG4AdABzACkAOwAgAFoAYQBjAGgAYQByAHkAIABRAHUAaQBuAG4AIABTAGMAaABlAHUAcgBlAG4AIAAoAHYAYQByAGkAYQBiAGwAZQAgAGYAbwBuAHQAIAAmACAAbwB2AGUAcgBhAGwAbAAgAHAAcgBvAGQAdQBjAHQAaQBvAG4AKQBoAHQAdABwAHMAOgAvAC8AZgBvAG4AdABzAC4AZwBvAG8AZwBsAGUALgBjAG8AbQAvAG4AbwB0AG8AaAB0AHQAcAA6AC8ALwB3AHcAdwAuAGEAZABvAGIAZQAuAGMAbwBtAC8AdAB5AHAAZQAvAFQAaABpAHMAIABGAG8AbgB0ACAAUwBvAGYAdAB3AGEAcgBlACAAaQBzACAAbABpAGMAZQBuAHMAZQBkACAAdQBuAGQAZQByACAAdABoAGUAIABTAEkATAAgAE8AcABlAG4AIABGAG8AbgB0ACAATABpAGMAZQBuAHMAZQAsACAAVgBlAHIAcwBpAG8AbgAgADEALgAxAC4AIABUAGgAaQBzACAARgBvAG4AdAAgAFMAbwBmAHQAdwBhAHIAZQAgAGkAcwAgAGQAaQBzAHQAcgBpAGIAdQB0AGUAZAAgAG8AbgAgAGEAbgAgACIAQQBTACAASQBTACIAIABCAEEAUwBJAFMALAAgAFcASQBUAEgATwBVAFQAIABXAEEAUgBSAEEATgBUAEkARQBTACAATwBSACAAQwBPAE4ARABJAFQASQBPAE4AUwAgAE8ARgAgAEEATgBZACAASwBJAE4ARAAsACAAZQBpAHQAaABlAHIAIABlAHgAcAByAGUAcwBzACAAbwByACAAaQBtAHAAbABpAGUAZAAuACAAUwBlAGUAIAB0AGgAZQAgAFMASQBMACAATwBwAGUAbgAgAEYAbwBuAHQAIABMAGkAYwBlAG4AcwBlACAAZgBvAHIAIAB0AGgAZQAgAHMAcABlAGMAaQBmAGkAYwAgAGwAYQBuAGcAdQBhAGcAZQAsACAAcABlAHIAbQBpAHMAcwBpAG8AbgBzACAAYQBuAGQAIABsAGkAbQBpAHQAYQB0AGkAbwBuAHMAIABnAG8AdgBlAHIAbgBpAG4AZwAgAHkAbwB1AHIAIAB1AHMAZQAgAG8AZgAgAHQAaABpAHMAIABGAG8AbgB0ACAAUwBvAGYAdAB3AGEAcgBlAC4AaAB0AHQAcAA6AC8ALwBzAGMAcgBpAHAAdABzAC4AcwBpAGwALgBvAHIAZwAvAE8ARgBMAEUAeAB0AHIAYQBMAGkAZwBoAHQAUwBlAG0AaQBCAG8AbABkAFcAZQBpAGcAaAB0AAMAAAAAAAD/tQAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAB//8ACgABAAAACABiAF4ABAAGREZMVAAmY3lybAA4Z3JlawA4aGFuaQAma2FuYQAmbGF0bgA4AAYAAAAAAAIABAAeACIAJgCSAAYAAAAAAAMABAAMABAAFACAAAH/qwABA00AAf+IAAQAFgAEaWNmYmljZnRpZGVvcm9tbgAGREZMVAAmY3lybAA4Z3JlawA4aGFuaQAma2FuYQAmbGF0bgA4AAYAAAAAAAIABAAeACIAJgAqAAYAAAAAAAMABAAMABAAFAAYAAEAIwABA8UAAQAAAAEAeAAAAAEAAAAKAAwADgAAAAAAAAABAAAACgAMAA4AAAAAAAAAAQABAAgAAQAAABQAAQAAABwBAHdnaHQBCQAAAAIAAgAAAAABBgJYAAACWAAAArsAAAAAAAEQAAH0/gwAAAPoACH/4gQGAAAAAQAAAAAAAAAAAAAAAAABA+gAAANwAJEAfwCRAJEAkQCRAJEAfwCRAJEAJAAkACEAKgAA) format("woff2");font-weight:600;}
+</style></defs>
+<text x="430" y="102" text-anchor="middle" font-family="MJ Serif" font-size="96" font-weight="600" letter-spacing="11" fill="currentColor">幕景宇宙</text>
+<text x="430" y="152" text-anchor="middle" font-family="MJ Serif" font-size="36" font-weight="600" letter-spacing="10" fill="currentColor" fill-opacity="0.55">MUJING UNIVERSE</text>
+</svg>
+    </a>
+    <p class="eyebrow">银发合作报告</p>
+    <h1>把 AI 交到老人手上</h1>
+    <p class="dek">从四件每天发生的小事开始，做老人愿意用、工作人员也省力的 AI 工具。</p>
+
+    <div class="cover-facts">
+      <div class="cover-fact">
+        <p class="cover-fact-label">关于幕景宇宙</p>
+        <div class="cover-fact-body">
+          <p>幕景宇宙是一家位于杭州的 AI Native 工作室，以人工智能为核心，借助对于文化、设计与空间的理解，<span class="nowrap">创作</span>解决当下真实问题的产品、游戏与智能体，让我们生活的城市更美好。</p>
+          <p class="cover-team">团队：林丽丽（艺术家 · 创作）、丁科智（AI Native 经纪人）。<br>其他成员：吴耀好（AI 研究员）、韩志州（商业与资源）。</p>
+        </div>
+      </div>
+      <div class="cover-fact">
+        <p class="cover-fact-label">关于这份报告</p>
+        <div class="cover-fact-body">
+          <p>这份报告是把这套方法用在养老场景的一次尝试。数据标了出处，产品标现在做到哪一步。</p>
+          <p>我们还没有在养老场景做过试点，所以不写效果数字；合作从一次小规模试用开始。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cover-meta">
+      <span>面向 养老机构与社区合作方</span>
+      <span>2026 年 11 月 · 杭州</span>
+      <a href="https://mujing-universe.pages.dev/" target="_blank" rel="noopener">mujing-universe.pages.dev</a>
+      <a href="mailto:lily1326685527@gmail.com">lily1326685527@gmail.com</a>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="目录">
+    <p class="toc-label">目录</p>
+    <div class="toc-grid">
+      <a href="#pain"><b>老人卡在哪</b><span>四件每天发生的事</span></a>
+      <a href="#works"><b>我们做出过什么</b><span>六件已经做出来的东西</span></a>
+      <a href="#afternoon"><b>一个老人的下午</b><span>五件真实案例，一个设计案例</span></a>
+      <a href="#countries"><b>日本与新加坡</b><span>两种应对老龄化的方式</span></a>
+      <a href="#games"><b>软件与游戏</b><span>研究、五个案例与四个提案</span></a>
+      <a href="#packages"><b>三种合作方式</b><span>体验日 / 小工具 / 长期内容</span></a>
+      <a href="#pilot"><b>先试一次</b><span>2–4 周，只看三个数</span></a>
+      <a href="#sources"><b>出处</b><span>数据、研究与图片说明</span></a>
+    </div>
+  </nav>
+
+  <div class="now">
+  <p class="block-label">为什么是现在</p>
+  <div class="stats">
+    <div class="stat">
+      <p class="stat-num">3.23<em>亿</em></p>
+      <p class="stat-label">60 岁及以上人口</p>
+      <p class="stat-meta">占总人口 23.0% · 2025 年末</p>
+      <p class="stat-src">国家统计局</p>
+    </div>
+    <div class="stat">
+      <p class="stat-num">7 → 30<em>万亿</em></p>
+      <p class="stat-label">银发经济规模</p>
+      <p class="stat-meta">2023 年约 7 万亿，2035 年预计 30 万亿</p>
+      <p class="stat-src">国家发改委</p>
+    </div>
+    <div class="stat">
+      <p class="stat-num">1.61<em>亿</em></p>
+      <p class="stat-label">60 岁及以上网民</p>
+      <p class="stat-meta">该年龄段普及率 52.0% · 2025 年 6 月</p>
+      <p class="stat-src">CNNIC</p>
+    </div>
+  </div>
+  <p class="stats-note">上网的老人已经过半；但在不上网的人里，60 岁以上仍占 53.6%（2025 年末）——线下那部分，正是社区要接的人。</p>
+  </div>
+
+  <section class="block" id="pain">
+    <div class="section-head">
+      <h2>老人卡在哪</h2>
+      <p>不是老人不愿意用，是现在的服务和界面，默认他们会用。</p>
+    </div>
+    <div class="pains">
+      <div class="pain">
+        <figure><img src="assets/pains/notice.jpg" width="1200" height="900" loading="lazy" alt="社区公告栏里贴满通知、便民服务热线和办事指南"></figure>
+        <h3>通知到不了</h3>
+        <p>活动通知散在群里、公众号和公告栏，字小、刷得快，翻两下就找不到。</p>
+      </div>
+      <div class="pain">
+        <figure><img src="assets/pains/desk.jpg" width="1200" height="570" loading="lazy" alt="社区服务窗口前，工作人员在给两位居民讲解"></figure>
+        <h3>同一个问题答很多遍</h3>
+        <p>几点开始、在哪、要不要带东西——工作人员一天要回答几十次。</p>
+      </div>
+      <div class="pain">
+        <figure><img src="assets/pains/notes.jpg" width="1200" height="549" loading="lazy" alt="一本日历的日期下面写满蓝色圆珠笔的备忘"></figure>
+        <h3>说过了还是忘</h3>
+        <p>不是不听，是信息太多。子女转述一遍，又容易漏。</p>
+      </div>
+      <div class="pain">
+        <figure><img src="assets/pains/class.jpg" width="1200" height="755" loading="lazy" alt="社区智能手机课上，穿红马甲的志愿者俯身教老人点手机"></figure>
+        <h3>怕点错、怕麻烦人</h3>
+        <p>不敢乱按，宁可不用；问一次没听懂，就不好意思再问。</p>
+      </div>
+    </div>
+    <p class="pain-credit">图：北京日报（公告栏）、甘州在线（服务窗口）、澎湃新闻《家族志⑥》（日历）、长龙街道社工站（手机课）。资料图，仅作场景说明。</p>
+  </section>
+
+  <section class="block" id="works">
+    <div class="section-head">
+      <h2>我们做出过什么</h2>
+      <p>六件已经做出来的东西，进度各不相同。下面的画面都来自真实产品和官网，没有改图；每件配一段无声短录屏，点开可以放大看、播放。</p>
+    </div>
+    <div class="works">
+
+      <article class="work">
+        <div class="work-head">
+            <h3>转塘艺讯</h3>
+            <span class="stage live">已上线</span>
+          </div>
+        <figure class="work-media">
+          <button class="work-shot" type="button" data-kind="video" data-full="assets/works/videos/yixun.mp4" data-cap="转塘艺讯：在地图上找活动、看详情、切到月历。真实界面录屏，无声。">
+            <video muted loop playsinline preload="none" poster="assets/works/videos/yixun.jpg" data-src="assets/works/videos/yixun.mp4" aria-label="转塘艺讯界面演示"></video>
+            <span class="work-tag">录屏 · 8 秒</span>
+            <span class="work-zoom">点开播放</span>
+          </button>
+          <div class="thumbs">
+            <button class="thumb" type="button" data-full="assets/works/yixun/01.jpg" data-cap="地图与本周日程同屏：左边是这一周的活动，右边是它落在哪。">
+              <img src="assets/works/yixun/01.jpg" alt="转塘艺讯地图与本周日程" loading="lazy" width="1280" height="720">
+              <span>地图与本周日程</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/yixun/02.jpg" data-cap="活动详情：时间、地点、主办、参与方式放在一页，附活动海报。">
+              <img src="assets/works/yixun/02.jpg" alt="转塘艺讯活动详情页" loading="lazy" width="1280" height="720">
+              <span>活动详情一页说清</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/yixun/05.jpg" data-cap="月历视图：一个月的活动铺在日历上，哪天有空一眼看到。">
+              <img src="assets/works/yixun/05.jpg" alt="转塘艺讯月历视图" loading="lazy" width="1280" height="720">
+              <span>一个月的活动</span>
+            </button>
+          </div>
+          <p class="work-credit">截图与录屏：转塘艺讯，2026 年 11 月；活动信息为站点原有内容。</p>
+        </figure>
+        <div class="work-body">
+          <p>把国美象山、浙音一带散落的演出、展览和讲座，收进一张地图、一份本周日程和一本日历。</p>
+          <p class="maps">对应：通知到不了</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-head">
+            <h3>Mimi 智能体</h3>
+            <span class="stage live">已上线</span>
+          </div>
+        <figure class="work-media">
+          <button class="work-shot" type="button" data-kind="video" data-full="assets/works/videos/mimi.mp4" data-cap="Mimi 智能体：点「怎么合作」，它先给一段回答，再附上名片和下一步入口。真实界面录屏，无声。">
+            <video muted loop playsinline preload="none" poster="assets/works/videos/mimi.jpg" data-src="assets/works/videos/mimi.mp4" aria-label="Mimi 智能体界面演示"></video>
+            <span class="work-tag">录屏 · 10 秒</span>
+            <span class="work-zoom">点开播放</span>
+          </button>
+          <div class="thumbs">
+            <button class="thumb" type="button" data-full="assets/works/mimi/01.jpg" data-cap="开场：一句话说明它能做什么，下面给出常见问题的快捷入口。">
+              <img src="assets/works/mimi/01.jpg" alt="Mimi 智能体开场与快捷问题" loading="lazy" width="1280" height="720">
+              <span>开场与快捷问题</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/mimi/02.jpg" data-cap="回答不止一段话：末尾附名片、二维码和「写邮件」两个入口。">
+              <img src="assets/works/mimi/02.jpg" alt="Mimi 智能体回答附名片" loading="lazy" width="1280" height="720">
+              <span>回答后面有入口</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/mimi/04.jpg" data-cap="回答是一边想一边写出来的，先说结论，再补名片和入口。">
+              <img src="assets/works/mimi/04.jpg" alt="Mimi 智能体边回答边显示" loading="lazy" width="1280" height="720">
+              <span>一边说一边写出来</span>
+            </button>
+          </div>
+          <p class="work-credit">截图与录屏：幕景宇宙官网合作页，2026 年 11 月。</p>
+        </figure>
+        <div class="work-body">
+          <p>官网和飞书群里在用的问答智能体。能读群聊、文档、日历和多维表格；要动手前先发提案，等人确认；记忆按群分开。</p>
+          <p class="maps">对应：同一个问题答很多遍、说过了还是忘</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-head">
+            <h3>熟门熟路</h3>
+            <span class="stage live">在线演示</span>
+          </div>
+        <figure class="work-media">
+          <button class="work-shot" type="button" data-kind="video" data-full="assets/works/videos/venue.mp4" data-cap="熟门熟路：把真实场地做成可以旋转、可以预走的 3D 布置图。真实界面录屏，无声。">
+            <video muted loop playsinline preload="none" poster="assets/works/videos/venue.jpg" data-src="assets/works/videos/venue.mp4" aria-label="熟门熟路界面演示"></video>
+            <span class="work-tag">录屏 · 8 秒</span>
+            <span class="work-zoom">点开播放</span>
+          </button>
+          <div class="thumbs">
+            <button class="thumb" type="button" data-full="assets/works/venue/01.jpg" data-cap="先看现场：实拍照片旁边就是这块场地的说明和尺寸。">
+              <img src="assets/works/venue/01.jpg" alt="熟门熟路现场照片" loading="lazy" width="1280" height="720">
+              <span>先看现场照片</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/venue/03.jpg" data-cap="3D 平面：按真实尺寸摆桌椅，拖动就能转视角。">
+              <img src="assets/works/venue/03.jpg" alt="熟门熟路 3D 平面布置" loading="lazy" width="1280" height="720">
+              <span>按真实尺寸摆</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/venue/04.jpg" data-cap="路线预走：从门口到座位上，先在屏幕里走一遍。">
+              <img src="assets/works/venue/04.jpg" alt="熟门熟路路线预走" loading="lazy" width="1280" height="720">
+              <span>先把路走一遍</span>
+            </button>
+          </div>
+          <p class="work-credit">截图与录屏：熟门熟路在线演示，2026 年 11 月；场地照片为演示内原有素材。</p>
+        </figure>
+        <div class="work-body">
+          <p>把真实场地做成可以预走的场景：从门口到二楼，第一人称走一遍。手机里看到的，和现场贴的图对得上；尺寸还在校准。</p>
+          <p class="maps">对应：知道有活动，却找不到地方</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-head">
+            <h3>幕景 Scendance</h3>
+            <span class="stage">已完成</span>
+          </div>
+        <figure class="work-media">
+          <button class="work-shot" type="button" data-kind="video" data-full="assets/works/videos/scendance.mp4" data-cap="幕景 Scendance：在 3D 场地里拖动视角，输入一句「80 人发布会，室内」，让它先出一版布置。真实界面录屏，无声。">
+            <video muted loop playsinline preload="none" poster="assets/works/videos/scendance.jpg" data-src="assets/works/videos/scendance.mp4" aria-label="幕景 Scendance 界面演示"></video>
+            <span class="work-tag">录屏 · 14 秒</span>
+            <span class="work-zoom">点开播放</span>
+          </button>
+          <div class="thumbs">
+            <button class="thumb" type="button" data-full="assets/works/scendance/01.jpg" data-cap="3D 场景里已经有桌椅、吧台和灯，拖一下就换视角。">
+              <img src="assets/works/scendance/01.jpg" alt="幕景 3D 场景" loading="lazy" width="1280" height="720">
+              <span>场地已经是 3D 的</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/scendance/02.jpg" data-cap="不用学画图：把人数、场景写进去，它先给一版草图。">
+              <img src="assets/works/scendance/02.jpg" alt="幕景输入需求" loading="lazy" width="1280" height="720">
+              <span>一句话说需求</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/scendance/04.jpg" data-cap="发给客户之前，先用客户链接把路线自己走一遍。">
+              <img src="assets/works/scendance/04.jpg" alt="幕景客户链接与预走" loading="lazy" width="1600" height="900">
+              <span>先自己走一遍</span>
+            </button>
+          </div>
+          <p class="work-credit">截图与录屏：幕景 Scendance 在线演示，2026 年 11 月。</p>
+        </figure>
+        <div class="work-body">
+          <p>把平面图变成可编辑的场地，用真实尺寸的桌椅、吧台、舞台摆布置；说一句需求，AI 先出一版初稿，同组的人一起改。</p>
+          <p class="maps">对应：活动布置反复改、每次从头来</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-head">
+            <h3>推鉴</h3>
+            <span class="stage live">参赛 · 已上线</span>
+          </div>
+        <figure class="work-media">
+          <button class="work-shot" type="button" data-kind="video" data-full="assets/works/videos/tuijian.mp4" data-cap="推鉴：左边选产品，右边「本次组合」立刻落到型号和版本；下一步再按客户圈定场景。真实界面录屏，无声。">
+            <video muted loop playsinline preload="none" poster="assets/works/videos/tuijian.jpg" data-src="assets/works/videos/tuijian.mp4" aria-label="推鉴界面演示"></video>
+            <span class="work-tag">录屏 · 7 秒</span>
+            <span class="work-zoom">点开播放</span>
+          </button>
+          <div class="thumbs">
+            <button class="thumb" type="button" data-full="assets/works/tuijian/02.jpg" data-cap="产品管理：同一个系列分不同版本，每个版本后面挂着知识库原文和图片。">
+              <img src="assets/works/tuijian/02.jpg" alt="推鉴产品管理" loading="lazy" width="1440" height="900">
+              <span>产品分版本管理</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/tuijian/03.jpg" data-cap="客户管理：41 个默认场景，按行业与岗位分，每个场景带原始资料。">
+              <img src="assets/works/tuijian/03.jpg" alt="推鉴客户管理" loading="lazy" width="1440" height="900">
+              <span>客户按场景分组</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/tuijian/04.jpg" data-cap="AI 工作流：四条链路，每个节点做什么、怎么回查，都画在同一页。">
+              <img src="assets/works/tuijian/04.jpg" alt="推鉴 AI 工作流" loading="lazy" width="1440" height="900">
+              <span>每条链路画出来</span>
+            </button>
+          </div>
+          <p class="work-credit">截图与录屏：推鉴线上体验版，2026 年 11 月；使用产品自带的测试账号，未改动任何内容。</p>
+        </figure>
+        <div class="work-body">
+          <p>把写通知最容易出错的三件事——信息记错、语气不对、说了没依据的话——收进一条流程：AI 一次只问一个问题，引用由程序回填，写完再逐条回查。</p>
+          <p class="maps">对应：通知写不准、反复返工</p>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-head">
+            <h3>小鸡宇宙</h3>
+            <span class="stage">进行中</span>
+          </div>
+        <figure class="work-media">
+          <button class="work-shot" type="button" data-kind="video" data-full="assets/works/videos/chicken.mp4" data-cap="小鸡宇宙：官网上的一层互动，小鸡会跟着光标走，点空白处下一颗蛋。真实界面录屏，无声。">
+            <video muted loop playsinline preload="none" poster="assets/works/videos/chicken.jpg" data-src="assets/works/videos/chicken.mp4" aria-label="小鸡宇宙界面演示"></video>
+            <span class="work-tag">录屏 · 9 秒</span>
+            <span class="work-zoom">点开播放</span>
+          </button>
+          <div class="thumbs">
+            <button class="thumb" type="button" data-full="assets/works/chicken/04.jpg" data-cap="七种角色：奶油、蓝灰、金黄、灰绿，先画角色，再做动作。">
+              <img src="assets/works/chicken/04.jpg" alt="小鸡宇宙七种角色设定" loading="lazy" width="1600" height="900">
+              <span>七种小鸡角色</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/chicken/05.jpg" data-cap="一队小鸡从页面左边走到右边，慢慢排成一条线。">
+              <img src="assets/works/chicken/05.jpg" alt="小鸡宇宙小鸡排队" loading="lazy" width="1600" height="900">
+              <span>排成一队走过</span>
+            </button>
+            <button class="thumb" type="button" data-full="assets/works/chicken/06.jpg" data-cap="角色也能落到实物上：帆布包、马克杯、徽章，先做样机看效果。">
+              <img src="assets/works/chicken/06.jpg" alt="小鸡宇宙帆布包样机" loading="lazy" width="1600" height="900">
+              <span>做成实物样机</span>
+            </button>
+          </div>
+          <p class="work-credit">截图与录屏：幕景宇宙官网「小鸡宇宙」作品页，2026 年 11 月；角色设定图来自小鸡宇宙产品说明。</p>
+        </figure>
+        <div class="work-body">
+          <p>官网上的一层互动装置：点空白处下一颗蛋，孵出七种小鸡，会走、会说话。怎么点都不会错，先让人愿意点。</p>
+          <p class="maps">对应：怕点错、怕麻烦人</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="block" id="afternoon">
+    <div class="section-head">
+      <h2>一个老人的下午</h2>
+      <p>先看真实里已经发生过的事：五件，三件在杭州，一件在上海，一件是装了没人用的反例。看完再回到我们打算怎么接。陈阿姨仍然是虚构的，这一节是设计案例，不是试点记录。</p>
+    </div>
+
+    <h3 class="subhead">真实里，已经有人这样做</h3>
+    <p class="sublede">两件关于“看不到、去不了”，两件关于“社区和机构怎么管”，一件提醒我们别做成摆设。图片都是报道原图，点一下可以放大看细节。</p>
+
+    <div class="cases">
+      <article class="case">
+        <figure class="case-media">
+          <button class="case-shot" type="button" data-full="assets/cases/vr-gongshu.jpg" data-cap="杭州拱墅区养老服务中心：一位老人戴着 VR 头显，面前架着 360° 全景相机，旁边有人陪着。图片：潮新闻（浙江在线图片库）2025 年 8 月报道配图。">
+            <img src="assets/cases/vr-gongshu.jpg" alt="三位老人坐在活动室的沙发上，右边一位戴着 VR 头显，画面中间架着一台 360 度全景相机">
+            <span class="work-zoom">点开看大图</span>
+          </button>
+        </figure>
+        <div>
+          <p class="where">杭州拱墅 · 2025</p>
+          <h3>时光档案馆：先给一个人拍</h3>
+          <p>拱墅区养老服务中心里，老人戴上 VR 眼镜，面前架着一台 360° 相机。这个项目叫“时光档案馆”：给百岁老人拍生活影像和家庭故事，做成能走进去的“人生图谱”；另有一部短片《时光简笔画》，手绘贴图配实景拍摄。区民政局支持、一家社会组织承办，已经办了十余场活动。</p>
+          <p class="take"><b>可借鉴</b>“云旅游”的内容不是买来的片库，是为这个人现拍的；现场要有人帮着戴、坐在旁边一起讲。</p>
+          <p class="take no"><b>不能照搬</b>拍摄、头显都要钱，一次只能服务几位老人；我们不做通用片库，也不承诺“看了心情好”。</p>
+          <p class="credit">事实：杭州网 2025-07-31 报道 · 图片：潮新闻（浙江在线图片库）2025 年 8 月配图</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure class="case-media">
+          <button class="case-shot" type="button" data-full="assets/cases/vr-shanghai.jpg" data-cap="上海徐汇区第三老年福利院：工作人员扶着 VR 头显，一位老人正在体验。画面来自 021 视频 2021 年 12 月报道，带原视频字幕。">
+            <img src="assets/cases/vr-shanghai.jpg" alt="一位老人戴着 VR 头显，穿红衣服的工作人员在旁边扶着设备">
+            <span class="work-zoom">点开看大图</span>
+          </button>
+        </figure>
+        <div>
+          <p class="where">上海徐汇 · 2021</p>
+          <h3>出不去的那年，戴上眼镜“走出去”</h3>
+          <p>防疫期，徐汇区第三老年福利院里出不去的爷爷奶奶，靠一副 VR 眼镜“环游世界”：一段影像、一次一位、工作人员在旁边扶着设备。这是那段时间被反复报道的一次院内活动。</p>
+          <p class="take"><b>可借鉴</b>先解决“出不去”，再谈“看世界”；设备由人一对一操作，不发给老人自己摸索。</p>
+          <p class="take no"><b>不能照搬</b>通用风景片对具体的人没有指向性；戴头显可能头晕，时长要短，且要本人愿意。</p>
+          <p class="credit">事实与画面：021 视频（新浪财经转载），2021-12-23 · 画面为视频帧，保留原字幕</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure class="case-media">
+          <button class="case-shot" type="button" data-full="assets/cases/hemu-activities.jpg" data-cap="杭州拱墅和睦社区：上半是“银龄互助跨越数字沟通培训会”现场，下半是“阳光和睦”小程序里的活动详情与社区活动列表——时间、地点、参与积分 88 分每人、限定 31/50 人，列表里逐条标着“31 人已报名”。图片：中国日报网 2022-08-17 报道配图。">
+            <img src="assets/cases/hemu-activities.jpg" alt="社区教室里坐着几十位老人在听讲解，下面是手机小程序里的活动详情和活动列表">
+            <span class="work-zoom">点开看大图</span>
+          </button>
+        </figure>
+        <div>
+          <p class="where">杭州拱墅 · 和睦社区 · 2022</p>
+          <h3>活动摆在小程序里，签到和参加都有积分</h3>
+          <p>和睦社区 60 岁以上的老人有 2515 户，占户籍人口三分之一。社区用“阳光和睦”小程序发活动：一条活动写清时间、地点、能得多少积分、限多少人，一场“银龄互助培训班”31 人报了名。签到和参加活动攒下的积分，可以在移动营业厅、养老食堂、社区超市、理发店换服务，当时参与积分的居民 283 人。家里智能水表两天没走字，社区就会打电话确认老人安全。</p>
+          <p class="take"><b>可借鉴</b>“通知”不是发一条消息，是一张看得清的列表：名额、地点、去了有什么好处；和安全提醒绑在一起，才有人天天打开。</p>
+          <p class="take no"><b>不能照搬</b>背后是社区、银行、物业一起做的；我们只提供这一页界面，不碰积分资金，也不代替社区做决定。</p>
+          <p class="credit">事实：中国日报网 2022-08-17 报道 · 图片：该报道配图（培训会现场与小程序活动页）</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure class="case-media">
+          <button class="case-shot" type="button" data-full="assets/cases/taikang-zheyuan.jpg" data-cap="泰康之家·浙园（杭州西湖区小和山）2026 年 10 月开业。图片：潮新闻 2026-10-21 报道配图（西湖区委宣传部供图）。">
+            <img src="assets/cases/taikang-zheyuan.jpg" alt="泰康之家浙园的入口：门厅、道闸和后面的高层住宅楼，墙上有“泰康之家·浙园”字样">
+            <span class="work-zoom">点开看大图</span>
+          </button>
+        </figure>
+        <div>
+          <p class="where">杭州西湖区 · 泰康之家·浙园 · 2026</p>
+          <h3>高端康养社区的一天是怎么排出来的</h3>
+          <p>2026 年 10 月，泰康之家·浙园在西湖区小和山开业，约 1300 个养老单元，一期开放约 650 户。从 7 月开放入住到报道时，已累计开展 48 场活动、开设近 30 门课程：油画、小提琴、茶艺、剧本杀，还有 AR 课和智能手机课，教老人怎么就诊、怎么挂号、怎么购物。社区门口一块电子屏连着“长寿社区智慧平台”，上面是在住居民文化娱乐、运动健康、营养美食的实时数据，也连着老人胸前的定位报警卡。</p>
+          <p class="take"><b>可借鉴</b>活动要排成一张有名额、有老师、有场地的课表；教手机就教她马上用得上的那三件事：就诊、挂号、购物。</p>
+          <p class="take no"><b>不能照搬</b>这是保险支付加持续照护的生意，一个社区上千个单元，街道和居委会学不起。要做的是把“课表”和“看得懂的屏”缩到几十人的尺度。</p>
+          <p class="credit">事实：潮新闻 2026-10-21（西湖区委宣传部供稿）· 图片：该报道中的浙园实景照片</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure class="case-media">
+          <button class="case-shot" type="button" data-full="assets/cases/call-screen.jpg" data-cap="上海一个小区门口的“一键叫车”智慧屏，一位老人正在屏幕前操作，屏上是“请等待”。图片：新浪 2021-06-16 报道配图。">
+            <img src="assets/cases/call-screen.jpg" alt="一位戴眼镜的老人站在挂在墙上的竖屏前操作，屏幕上显示请等待">
+            <span class="work-zoom">点开看大图</span>
+          </button>
+        </figure>
+        <div>
+          <p class="where">上海 · 一键叫车智慧屏 · 2024</p>
+          <h3>装上了，不等于有人用</h3>
+          <p>2021 年起，“申程出行”在上海做打车适老化改造，把“一键叫车”智慧屏推进社区，点位已达千余个。2024 年 8 月记者蹲点回访：有老人没听说过这东西；有的屏积了一层灰；长宁区一个点位安在社区服务站二楼，工作人员说基本没人用。真上手的人卡在第一步——刷脸要绑支付宝账号，手机号要输验证码，绑定条款的字比屏幕上其他字更小；叫到车以后想取消，还得重输一遍手机号。有老人试完说：还是让子女帮忙打车更快。</p>
+          <p class="take"><b>可借鉴</b>这条是给我们自己的提醒：入口要在她每天走得到的位置；第一步不许出现账号、验证码、绑定；一次只让她按一个键。</p>
+          <p class="take no"><b>不能照搬</b>它难在派单和司机端的配合，不是一个界面能救的；我们不做叫车，也不承诺解决出行。</p>
+          <p class="credit">事实：人民网上海频道 2024-08-19 报道 · 图片：新浪 2021-06-16 报道配图</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="reach">
+      <p class="key">这些入口已经存在，我们要接进去，不是另开一个。</p>
+      <p><strong>西湖区本身就在做这些：</strong>区里的报道给出几个数——3 个体验中心（银发西溪 Mall、区社会福利中心、翠苑一区 AI 康养社区）服务过 12 万人次；30 余个体验点把认知筛查、药膳教学、银龄集市送到身边；翠苑一区率先为 200 名高龄独居老人做慢病监测和探访关爱；留下街道把社区食堂升级成康养生活驿站，推“碰一碰”送餐。</p>
+    </div>
+
+    <h3 class="subhead">陈阿姨的下午</h3>
+    <p class="sublede">把上面看到的接过来，一位老人一下午会经历什么。每一段配一张示意图（AI 绘制，不是现场照片），下面写清楚：真实里谁已经这样做，我们手上什么是现成的，什么要新做。</p>
+
+    <div class="person">
+      <div class="label">人物</div>
+      <div>
+        <p class="key">她怕麻烦人，也怕问了两遍还记不住。</p>
+        <p>陈阿姨，68 岁，独居，女儿住城西。手机是女儿换下来的，她只会微信、视频和拍照，字一直放到最大。</p>
+      </div>
+    </div>
+
+    <div class="moment">
+      <div class="time">周二 14:00</div>
+      <div>
+        <h3>想问，但不想麻烦人</h3>
+        <p class="key">不用问人，先看列表。</p>
+        <figure class="illus">
+          <img src="assets/illus/moment-1400-ask.jpg" width="1360" height="907" loading="lazy" alt="示意图：一位头发花白的老人坐在自家单人沙发上，双手捧着手机，拇指按在屏幕下方的一个圆形按钮上，手机旁浮着一个空的对话气泡">
+          <figcaption>示意图 · AI 绘制，不是现场照片</figcaption>
+        </figure>
+        <p>按住手机上的一个按钮，说：<strong>“今天下午有啥活动？”</strong> 手机答：“三点，二楼活动室，越剧赏析，还有三个名额。”同时把这条放进她自己的日程。</p>
+        <p class="seen"><b>真实里：</b>和睦社区把活动一条一条摆在小程序里，写清时间、地点、名额和积分，一场培训班 31 人报名。</p>
+        <p class="status"><span class="k done">现成</span>Mimi 的对话能力、转塘艺讯的活动数据　<span class="k">要新做</span>一个只装社区事的语音入口，按住就说话</p>
+      </div>
+    </div>
+
+    <div class="moment">
+      <div class="time">周二 14:20</div>
+      <div>
+        <h3>知道有活动，但找不到地方</h3>
+        <p class="key">手机和眼前对得上。</p>
+        <figure class="illus">
+          <img src="assets/illus/moment-1420-way.jpg" width="1360" height="907" loading="lazy" alt="示意图：从老人自己的视角看社区活动室的走廊，前方是门和左拐的楼梯，墙上贴着一张纯图形的大路线图，手里的手机屏幕上是同一张路线图">
+          <figcaption>示意图 · AI 绘制，不是现场照片</figcaption>
+        </figure>
+        <p>点开“怎么走”，看一段<strong>第一人称路线</strong>：进门、左转、上二楼、第二个门。现场门口贴同一张图。</p>
+        <p class="seen"><b>反面提醒：</b>上海的智慧屏卡在第一步——要绑账号、要输验证码、字太小，老人试完说“还是让子女帮忙更快”。</p>
+        <p class="status"><span class="k done">现成</span>熟门熟路的在线预走　<span class="k">要新做</span>真实院区的路线采集，以及能贴在现场的大图</p>
+      </div>
+    </div>
+
+    <div class="moment">
+      <div class="time">周二 15:10</div>
+      <div>
+        <h3>哪儿也去不了的时候</h3>
+        <p class="key">内容都是现拍的，旁边都有人。</p>
+        <figure class="illus">
+          <img src="assets/illus/moment-1510-vr.jpg" width="1360" height="907" loading="lazy" alt="示意图：社区活动室的墙上大屏放着一段老巷子和木织机的画面，一位老人坐在扶手椅上看着，一名工作人员蹲在她椅边一只手搭在椅背上讲解，旁边茶几上放着一台没有戴起来的头显">
+          <figcaption>示意图 · AI 绘制，不是现场照片</figcaption>
+        </figure>
+        <p>去年冬天摔过一次以后，她不太敢出远门。社区活动室的大屏上放着一段<strong>为她自己拍的画面</strong>：1980 年那条巷子、那台织机，是工作人员拿 360° 相机在原地拍的；有人坐在她旁边，边看边讲。愿意的话，也可以戴上头显。</p>
+        <p class="seen"><b>真实里：</b>拱墅给百岁老人拍“时光档案馆”，徐汇的养老院在防疫期让老人戴 VR “走出去”。</p>
+        <p class="status"><span class="k done">现成</span>熟门熟路的空间采集与三维画面　<span class="k">要新做</span>为一位老人现拍的 360° 内容、一次只服务几人的现场流程；戴头显可能头晕，时长要短，画面须经她本人同意才使用</p>
+      </div>
+    </div>
+
+    <div class="moment">
+      <div class="time">周二 15:40</div>
+      <div>
+        <h3>想给孩子看，但不想解释半天</h3>
+        <p class="key">她不用打字。</p>
+        <figure class="illus">
+          <img src="assets/illus/moment-1540-share.jpg" width="1360" height="907" loading="lazy" alt="示意图：从老人肩后看出去，她双手举着手机拍下活动室里两位甩着水袖的越剧邻居，手机屏幕上三张照片已经自动排成一张齐边的图">
+          <figcaption>示意图 · AI 绘制，不是现场照片</figcaption>
+        </figure>
+        <p>活动结束，她拍了几张照片。点“发给女儿”，手机把照片排成一张图，写上日期、活动名和地点。</p>
+        <p class="seen"><b>真实里：</b>浙园把 48 场活动、近 30 门课排成课表，居民的作品挂在公共空间里；小年糕让老人三步做出一段能发到家庭群的影集。</p>
+        <p class="status"><span class="k done">现成</span>过往活动物料里的图片排版与生成能力　<span class="k">要新做</span>一键成图、一键分享的页面，照片须经她本人同意才使用</p>
+      </div>
+    </div>
+
+    <div class="moment">
+      <div class="time">周三 9:00</div>
+      <div>
+        <h3>机构这边多了一条看得懂的信息</h3>
+        <p class="key">于是下周加一场，把名额从 12 个放到 15 个。</p>
+        <figure class="illus">
+          <img src="assets/illus/moment-wed-0900.jpg" width="1360" height="907" loading="lazy" alt="示意图：早上刚开门，一名工作人员站在墙上一块小屏前，手里拿笔指着屏上几行长短不一的条形和两堆圆点，另一名同事坐在桌前在纸质排期表上写字">
+          <figcaption>示意图 · AI 绘制，不是现场照片</figcaption>
+        </figure>
+        <p>工作人员看到一页小屏：越剧被问 12 次，到场 9 人，3 人没报上名。</p>
+        <p class="seen"><b>真实里：</b>和睦社区的数字驾驶舱已经在算 2515 户高龄老人、照护等级和预警；浙园门口的屏连着老人胸前的定位报警卡。这些屏管的是安全，还没有一块管“下周该排几场、该排什么”。</p>
+        <p class="status"><span class="k done">现成</span>转塘艺讯的活动与日程数据　<span class="k">要新做</span>给工作人员看的一页小屏，只留“该加什么、该减什么”</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="countries">
+    <div class="section-head">
+      <h2>日本与新加坡怎么应对老龄化</h2>
+      <p>两国都比我们早走二十年。答案不能照搬，但能看清哪些事该政府做、哪些适合小团队做。</p>
+    </div>
+
+    <div class="countries">
+      <article class="country">
+        <h3>日本</h3>
+        <p class="tagline">把照护变成一张全民的保险网</p>
+        <dl class="fact">
+          <dt>制度</dt>
+          <dd>2000 年起实行介护保险：<strong>40 岁以上都要缴费</strong>，服务自付一成，收入高的两到三成；费用一半来自保费、一半来自税。照护从“一家人的事”变成全社会分摊。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>空间</dt>
+          <dd>以“团块世代全部满 75 岁”的 2025 年为节点，建<strong>地域包括照护体系</strong>：把住房、医疗、护理、预防、生活支援五件事放进步行圈，由市町村牵头。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>人</dt>
+          <dd>人手填不上。厚生劳动省预计 2040 年需要 272 万护理人员，缺口约 <strong>57 万</strong>，所以把希望放在设备、信息系统和远程看护上。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>数字与孤独</dt>
+          <dd>总务省从 2021 年起提出<strong>五年培训约 1000 万高龄者</strong>用智能手机；2024 年 4 月施行《孤独·孤立对策推进法》，把孤独当作社会问题。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>没解决</dt>
+          <dd class="gap">费用持续上涨，制度复杂到老人和家属仍然看不懂；培训常常“课上会、回家忘”，缺的是每天都能用上的具体事情。</dd>
+        </dl>
+      </article>
+
+      <article class="country">
+        <h3>新加坡</h3>
+        <p class="tagline">把社区做成服务前台</p>
+        <dl class="fact">
+          <dt>人口</dt>
+          <dd>2026 年进入<strong>超老龄社会</strong>，2030 年每四位公民就有一位 65 岁以上。留给社会调整的时间很短。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>设施</dt>
+          <dd>活跃乐龄中心从 2023 年的 119 个，计划扩到 2025 年的 220 个，目标是<strong>八成老人步行可达</strong>。中心里同时有结伴探访、运动课和数字课。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>钱与住</dt>
+          <dd>2023 年启动 Age Well SG，2024–2028 财年投入约 <strong>8 亿新元</strong>改善活跃乐龄中心；社区护理公寓、Kampung Admiralty 这类“垂直村落”，楼下是诊所、活动和小贩中心，楼上是住宅。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>数字</dt>
+          <dd>Seniors Go Digital 从 2019 年起做一对一辅导、工作坊和低价手机流量，到 2022 年已培训约 <strong>19 万老人</strong>。2022 年老人智能手机拥有率 89%，2017 年是 74%。</dd>
+        </dl>
+        <dl class="fact">
+          <dt>没解决</dt>
+          <dd class="gap">高度依赖政府和社区组织持续投入，设施建设周期长；会用手机，不等于愿意用、敢用。</dd>
+        </dl>
+      </article>
+    </div>
+
+    <div class="same">
+      <p class="key">把数字能力当基础设施，不是让老人自学。</p>
+      <p><strong>两国其实在做同一件事：</strong>原地养老，不把老人搬去远处；先修最后一公里，有人告诉他今天有什么、怎么走。</p>
+    </div>
+    <div class="boundary-line">
+      <p class="key">保险、评估、医疗判断是国家和机构的事，我们不碰。</p>
+      <p>我们只做体系里最薄的一层：信息到人、路线到门、重复问题交给机器、照片到家属。日本和新加坡都花了十几年和大量财政，我们没有那个量级，只做轻的、当天能用上的那一小块。</p>
+    </div>
+  </section>
+
+  <section class="block" id="games">
+    <div class="section-head">
+      <h2>软件与游戏：让老人愿意打开</h2>
+      <p>前面解决的是“当天能用”，这一节解决“为什么还要再来”。研究给的答案不神奇：熟悉的东西、有人一起、没有倒计时。</p>
+    </div>
+
+    <h3 class="subhead">研究怎么说</h3>
+    <div class="research">
+      <div class="findings">
+        <article class="finding">
+          <h3>认知游戏有一点用，但不多</h3>
+          <p>18 项研究里，15 项进入合并分析。认知障碍老人玩严肃游戏，和“不玩或只看别人玩”相比，非言语记忆和工作记忆有小幅改善；言语记忆没有显著变化。作者对证据质量的评价不高。</p>
+          <p class="src">Abd-alrazaq 等，JMIR Serious Games，2022</p>
+        </article>
+        <article class="finding">
+          <h3>老游戏也能当载体</h3>
+          <p>日本一家养老院的 5 位老人，15 周里各自玩《太空侵略者》，4 人纳入分析。数字记忆、词语记忆和心理旋转有改善。样本极小，只能说明“愿意玩、能坚持”，不能说明能防失智。</p>
+          <p class="src">Yorozuya 等，BMC Geriatrics，2024</p>
+        </article>
+        <article class="finding">
+          <h3>关键不是游戏，是旁边有人</h3>
+          <p>40 位 50–85 岁的人，和年轻搭档一起玩 8 次，总结出 45 条设计规则：去掉倒计时、用熟悉的文化符号、允许降速和提示、别把老人画成消极静止的样子。10 项体感游戏研究的综述里，8 项用 Wii，多数报告孤独感下降、社交连接增加；9 项孤独感研究也指向同一件事：起作用的是社交互动，不是屏幕本身。</p>
+          <p class="src">Lee 等，JMIR Serious Games，2021；Li、Theng 等，JMIR，2018；Healthcare，2025</p>
+        </article>
+      </div>
+
+      <figure class="effect">
+        <figcaption>
+          <b>记忆改善（SMD）</b>
+          <span>认知障碍老人；与不玩或被动观看相比。竖线为 0，越往右改善越大；横线为 95% 置信区间。</span>
+        </figcaption>
+        <div class="effect-row">
+          <span class="effect-label">非言语记忆</span>
+          <div class="effect-track">
+            <i class="effect-ci" style="left:24.2%;width:61.6%"></i>
+            <i class="effect-dot" style="left:55%"></i>
+          </div>
+          <span class="effect-val">0.46<em>0.09–0.83</em></span>
+        </div>
+        <div class="effect-row">
+          <span class="effect-label">工作记忆</span>
+          <div class="effect-track">
+            <i class="effect-ci" style="left:17.5%;width:49.2%"></i>
+            <i class="effect-dot" style="left:42.5%"></i>
+          </div>
+          <span class="effect-val">0.31<em>0.01–0.60</em></span>
+        </div>
+        <div class="effect-row">
+          <span class="effect-label">言语记忆</span>
+          <div class="effect-track">
+            <i class="effect-ci" style="left:7.5%;width:83.3%"></i>
+            <i class="effect-dot ns" style="left:49.2%"></i>
+          </div>
+          <span class="effect-val">0.39<em>−0.11–0.89</em></span>
+        </div>
+        <p class="effect-note">空心点为统计上不显著；证据质量低，不能替代治疗。</p>
+      </figure>
+    </div>
+
+    <div class="reach">
+      <p class="key">只靠线上投放，找到的多半不是老人。</p>
+      <p><strong>还有一个数字值得看：</strong>一款做代际互动的社交游戏，在社交媒体上触达 19.2 万人，最后 1,363 次下载、155 人入组，转化率 0.08%，其中 65 岁以上只占 21.9%。要在社区里、有人当面邀请，才招得到。</p>
+    </div>
+
+    <h3 class="subhead">五个亚洲案例</h3>
+    <p class="sublede">前四个是产品和项目，最后一个是研究机构；共同点是先给了一个具体的理由，让老人愿意坐下来。</p>
+
+    <div class="cases">
+      <article class="case">
+        <figure><img src="assets/cases/brainage-cover.jpg" alt="任天堂 DS 游戏《Brain Age》封面"></figure>
+        <div>
+          <p class="where">日本 · 2005</p>
+          <h3>Brain Age</h3>
+          <p>把算数、朗读、找不同包装成“每天 10 分钟测一下脑龄”，用触屏和麦克风作答。到 2007 年全球卖出超过 1000 万份。它不是为老人做的，却让“每天练一下”变成了一代人的习惯。</p>
+          <p class="take"><b>可借鉴</b>每天一次、有分数、看得见进步；把训练藏在一个熟悉的动作里。</p>
+          <p class="take no"><b>不能照搬</b>要买一台掌机；我们也不承诺“变聪明”或“防失智”。</p>
+          <p class="credit">封面：任天堂，来源 Wikipedia（合理使用）</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure><img src="assets/cases/xiaoniangao.jpg" alt="小年糕小程序的产品介绍图，两部手机上分别是内容页和影集制作页"></figure>
+        <div>
+          <p class="where">中国 · 2017</p>
+          <h3>小年糕</h3>
+          <p>微信小程序：选模板、放照片、配音乐，三步做出一段影集，直接发到家庭群。上线一个月，用户从 1000 万涨到 2000 万；2019 年总用户超过 2 亿；2021 年公司称有 5 亿用户、千万日活。</p>
+          <p class="take"><b>可借鉴</b>老人要的不是“学会做视频”，是一个能发给孩子、拿得出手的成品。</p>
+          <p class="take no"><b>不能照搬</b>模板加流量的生意，内容会同质化；我们不做广告和拉新。</p>
+          <p class="credit">图片：新京报 2024-05-27 报道配图（小年糕）</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure><img src="assets/cases/wacare.jpg" alt="社区活动室里，几位长辈围坐，通过电视和手机参加线上专家的课程"></figure>
+        <div>
+          <p class="where">台湾 · 社区据点</p>
+          <h3>WaCare</h3>
+          <p>把线上专家课送进偏乡社区据点：据点把长辈召集到活动室，大屏放专家的直播课，长辈跟着做运动、提问。课程覆盖运动、失智照护、用药和三高饮食；官方商店页现在写 1600+ 位线上专家、15 个长照领域。</p>
+          <p class="take"><b>可借鉴</b>社区据点就是“影院”和“班主任”；线上内容必须有人在线下组织。</p>
+          <p class="take no"><b>不能照搬</b>背后是护理专业和机构合作；我们不做医疗建议，也不替代治疗师。</p>
+          <p class="credit">照片：AnkeCare《科技照护行不行，偏乡社区 Wa（Care）啦》，2021</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure><img src="assets/cases/room301.jpg" alt="《6栋301房》游戏画面：一栋老居民楼的单元门"></figure>
+        <div>
+          <p class="where">中国 · 2022</p>
+          <h3>6栋301房</h3>
+          <p>最初是中国传媒大学的毕业设计，后来由帧间工作室做成正式游戏。玩家用一位阿尔茨海默症患者的视角，在同一个房间里反复走迷宫、收拾行李，看记忆怎么一点点漏掉。2022 年 9 月上线。</p>
+          <p class="take"><b>可借鉴</b>让家属“体验”遗忘，比一篇科普文章更有说服力；适合家属场，不适合当老人的日常活动。</p>
+          <p class="take no"><b>不能照搬</b>严肃题材要有专业顾问，不能做成猎奇；节奏慢、指向强，老人不一定玩得动。</p>
+          <p class="credit">画面：Steam 商店页</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <figure><img src="assets/cases/lily.jpg" alt="一位长辈对着电脑摄像头挥手，屏幕上是一幅水墨风格的认知游戏画面"></figure>
+        <div>
+          <p class="where">新加坡 · 南洋理工</p>
+          <h3>LILY 的 Silver Games</h3>
+          <p>南洋理工与英属哥伦比亚大学合办的老龄研究中心，创始主任是苗春燕教授。他们把体感游戏同时当作身体和认知训练：摄像头读老人的动作，系统按表现调难度；长期记录用于早期发现，也用于帕金森、中风和失智的康复。团队里有临床神经科和认知神经科学的医生，和医院一起定规则。</p>
+          <p class="take"><b>可借鉴</b>游戏只是外壳，后面是“看懂表现—调难度—再看一次”的闭环；工程和临床一起定什么算做对了。</p>
+          <p class="take no"><b>不能照搬</b>要摄像头、大屏和临床合作；我们不做诊断，也不采集健康数据。</p>
+          <p class="credit">画面：NTU LILY 官网（Silver Games） · <a href="#lily-video">看 1 分钟展台演示</a></p>
+        </div>
+      </article>
+    </div>
+
+    <figure class="video" id="lily-video">
+      <video controls preload="none" playsinline poster="assets/cases/lily-video-cover.jpg">
+        <source src="assets/cases/lily-clip.mp4" type="video/mp4">
+        你的浏览器不支持视频，<a href="assets/cases/lily-clip.mp4">点这里下载观看</a>。
+      </video>
+      <figcaption>
+        <b>1 分钟：LILY 在 SWITCH 展台演示体感乒乓</b>
+        <span>2016 年新加坡 SWITCH 展会，研究人员用“Pong Pong”演示摄像头怎么读动作。这是展台演示，不是养老机构实拍；视频 1 分 01 秒，英文原声，带英文字幕。</span>
+        <span>开头字幕的意思是：这个研究中心的目标，是为老人开发技术。</span>
+        <a href="https://www.youtube.com/watch?v=q-I1YyjWgdE">原始视频：SWITCH Singapore（YouTube）</a>
+      </figcaption>
+    </figure>
+
+    <h3 class="subhead">日本：大学把游戏送进社区</h3>
+    <p class="sublede">一个把游戏送进社区，一个在实验室里看老人怎么用界面；共同点是先看老人实际怎么做，再谈设计。</p>
+
+    <div class="labs">
+      <article class="lab">
+        <figure><img src="assets/cases/nishitokyo.jpg" alt="一位戴帽子的长辈在商场里握着鼓槌玩体感游戏，身后有人围观"></figure>
+        <p class="where">东京 · 西东京市 × 东京大学</p>
+        <h4>把电子竞技做成市级预防事业</h4>
+        <p>2016 年，西东京市和东京大学高龄社会综合研究机构签合作协定，先在全市推行“东大式衰弱检查（frailty check）”。2022 年起，健康 e スポーツ（电子竞技）成为市里的预防事业：培养 61 名“健康数字指导士”，在社区会馆和公共设施带课，累计参加超过 1000 人。</p>
+        <p>2024 年 3 月，东大团队做效果验证：参加后，同代交流意愿提高 38.4%，每周外出 5 次以上的人增加 28%。</p>
+        <p class="take"><b>可借鉴</b>大学负责怎么测，市政府负责在哪开课，指导员从本地老人里培养——活动才留得下来。</p>
+        <p class="take no"><b>不能照搬</b>靠多年财政和持续评估撑着；我们做不了市政级项目，只能从一个活动室开始。</p>
+        <p class="credit">照片：西东京市 2024-11-26 新闻稿（PR TIMES）</p>
+      </article>
+
+      <article class="lab">
+        <p class="where">东京 · 东京科学大学（原东京工业大学）</p>
+        <h4>梅室博行：先看老人哪里慢、哪里错</h4>
+        <p>他做老年技术学（gerontechnology），研究老人用触屏、读保单、上网办事时，哪里慢、哪里容易错。2005–2008 年的课题，就是把老人的认知、行为和情感差异，整理成产品和环境的设计指引。</p>
+        <p class="take"><b>可借鉴</b>把“老人学不会”改写成“这个界面没有按他的认知来设计”。</p>
+        <p class="take no"><b>不能照搬</b>这些是实验室和问卷里的结论；换到一个具体的活动室，还得重新试。</p>
+        <p class="credit">来源：梅室研究室、KAKEN 研究课题</p>
+      </article>
+    </div>
+
+    <h3 class="subhead">如果放进社区，我们想做四件事</h3>
+    <p class="sublede">游戏研究给的是交互原则：不计时、不扣分、先让人愿意点。落到社区，我们想做四个能留下来的工具；都还没有<span class="nowrap">上线</span>，按先做哪一件排。</p>
+
+    <div class="ideas">
+      <article class="idea">
+        <h4>活动一页通 <span class="k">先做</span></h4>
+        <p>把群消息、公众号和公告栏照片里的活动，收成一张本周日程：时间、地点、还剩几个名额。老人看活动室大屏或收一张图，工作人员能看到哪场被问得最多。</p>
+        <p class="why">为什么先做：转塘艺讯已经在做同一件事，换一个社区的数据源就能跑；不需要老人装新应用。</p>
+      </article>
+      <article class="idea">
+        <h4>方言前台 <span class="k">第二个</span></h4>
+        <p>一台放在活动室的平板或音箱。按住说本地话就能问：今天有什么活动、在哪、要不要带东西。只答社区自己的事；答不上来就说不知道，并记下来让工作人员补。</p>
+        <p class="why">为什么第二个：不用打字、不用找图标；老人问过一次没被笑话，下一次才敢再问。</p>
+      </article>
+      <article class="idea">
+        <h4>活动记录员 <span class="k">工作人员用</span></h4>
+        <p>活动结束，工作人员拍几张照片、说两句话，生成一页回顾：来了多少人、大家反复问什么、下次该加什么。照片和声音用前逐个征得同意。</p>
+        <p class="why">为什么值得做：把工作人员每周重复写的总结，变成一次口述；下一次排活动也有依据。</p>
+      </article>
+      <article class="idea">
+        <h4>怀旧影像工坊 <span class="k">最重</span></h4>
+        <p>老人带一张老照片、说一段方言或家常，生成一段 30 秒的短片：老照片动起来，配她自己的声音。子女可以回一段声音，拼在一起。</p>
+        <p class="why">为什么放后面：要处理肖像、声音授权和生成质量；但这是老人最愿意带回家给别人看的东西。</p>
+      </article>
+    </div>
+
+    <h3 class="subhead">几条不做的事</h3>
+    <div class="card">
+      <ul class="rules">
+        <li>不倒计时，错了不扣分，随时能停。</li>
+        <li>一屏只放一个动作；字大、对比高、按钮大，但先看老人实际怎么点，不把“学不会”当成他的问题。</li>
+        <li>真人陪玩，允许旁观；不把老人单独留在屏幕前。</li>
+        <li>不说“训练大脑”“延缓衰老”“预防失智”——这些是需要临床证据的医疗声明。</li>
+        <li>不采集健康数据；照片和声音用前逐个征得同意，可随时撤回。</li>
+        <li>不把老人画成消极、静止、需要被同情的样子。</li>
+      </ul>
+    </div>
+
+    <div class="next-inline">
+      <p class="key">先做哪一个：活动一页通。</p>
+      <p>转塘艺讯的收集、日程和日历都是现成的，换一个社区的数据源就能跑；两周内能看到老人到底打不打开。方言前台第二个做，它决定老人敢不敢开口；活动记录员和怀旧影像工坊要处理授权和生成质量，放在试点之后。日本的例子还提醒一句：指导员最好从社区里长出来，不然课一停，人就散了。</p>
+    </div>
+    <div class="boundary-line">
+      <p class="key">这些都是设计提案，不是已验证的产品。</p>
+      <p>上面的研究只能说明这类活动可行，不能证明我们做出来就有效。真正有没有用，要看试点里老人还愿不愿意来第二次。</p>
+    </div>
+  </section>
+
+  <section class="block" id="packages">
+    <div class="section-head">
+      <h2>三种合作方式</h2>
+      <p>都从一件具体的事开始，不卖平台，不做大而全的系统。</p>
+    </div>
+    <div class="pkgs">
+      <article class="pkg">
+        <h3>社区体验日</h3>
+        <p class="key">一场活动，让老人自己做出一张画或一段影像带走</p>
+        <dl class="pkg-specs">
+          <div><dt>机构出什么</dt><dd>场地、20 位老人、一位对接人</dd></div>
+          <div><dt>我们交付什么</dt><dd>现场执行，素材与成片</dd></div>
+          <div><dt>周期</dt><dd>半天</dd></div>
+        </dl>
+      </article>
+      <article class="pkg">
+        <h3>定制小工具</h3>
+        <p class="key">把一件重复的事交给 AI：通知、答疑、活动记录</p>
+        <dl class="pkg-specs">
+          <div><dt>机构出什么</dt><dd>一位愿意试的同事</dd></div>
+          <div><dt>我们交付什么</dt><dd>一个能用的工具，一页使用说明</dd></div>
+          <div><dt>周期</dt><dd>4–6 周</dd></div>
+        </dl>
+      </article>
+      <article class="pkg">
+        <h3>长期内容</h3>
+        <p class="key">每月一批活动素材、怀旧影像、社区故事</p>
+        <dl class="pkg-specs">
+          <div><dt>机构出什么</dt><dd>素材授权与场地</dd></div>
+          <div><dt>我们交付什么</dt><dd>每月内容，一次现场活动</dd></div>
+          <div><dt>周期</dt><dd>按月</dd></div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="pilot">
+    <div class="section-head">
+      <h2>先试一次</h2>
+      <p>不先谈大合作，先小范围试一次。试点不通过就停，不硬推。</p>
+    </div>
+    <div class="pilot-grid">
+      <div>
+        <h3>怎么做</h3>
+        <ul>
+          <li>10–20 位老人，2–4 周</li>
+          <li>从一个具体场景开始，不铺开</li>
+          <li>结束给一页结论：行或不行，原因是什么</li>
+        </ul>
+      </div>
+      <div>
+        <h3>只看三个数</h3>
+        <ul>
+          <li>还愿意再用的人有多少</li>
+          <li>工作人员省下多少时间</li>
+          <li>家属怎么说</li>
+        </ul>
+      </div>
+      <div>
+        <h3>边界</h3>
+        <ul>
+          <li>不做医疗判断，不做健康监测</li>
+          <li>不替代工作人员，只接重复劳动</li>
+          <li>照片、声音、家庭信息，用前逐个征得同意，可随时撤回</li>
+          <li>现场不用“大模型”“智能体”这些词，只说“你按住说句话就行”</li>
+        </ul>
+      </div>
+      <div>
+        <h3>谁来做</h3>
+        <p class="plain">我们负责工具、内容和现场带一遍；机构负责场地、信任和活动组织。出现答不上来的问题，转人工，并留下记录。</p>
+      </div>
+    </div>
+    <div class="next">
+      <p class="key">下一步：欢迎先来工作室看一次现场演示。</p>
+      <p>再决定要不要试。微信 endTree-26 · 官网 mujing-universe.pages.dev</p>
+    </div>
+  </section>
+
+  <section class="sources" id="sources">
+    <h2>出处</h2>
+    <ol>
+      <li>厚生劳动省《地域包括ケアシステム》，<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/chiiki-houkatsu/index.html">mhlw.go.jp</a></li>
+      <li>厚生劳动省《Long-Term Care Insurance System》，<a href="https://www.mhlw.go.jp/content/12300000/000614772.pdf">mhlw.go.jp（PDF）</a></li>
+      <li>朝日新闻，2024-07-14，2040 年护理人员缺口约 57 万，<a href="https://www.asahi.com/ajw/articles/15346218">asahi.com</a></li>
+      <li>日本经济新闻，2021-05-18，五年培训约 1000 万高龄者，<a href="https://www.nikkei.com/article/DGXZQOUA17CNA0X10C21A5000000/">nikkei.com</a></li>
+      <li>内阁府《孤独・孤立対策推進法》，<a href="https://www.cas.go.jp/jp/seisaku/suisinhou/suisinhou.html">cas.go.jp</a></li>
+      <li>新加坡卫生部，2023-11-16，Age Well SG 与 8 亿新元投入，<a href="https://www.moh.gov.sg/newsroom/age-well-sg-to-support-our-seniors-to-age-actively-and-independently-in-the-community/">moh.gov.sg</a></li>
+      <li>Age Well SG 官网，2026 年进入超老龄社会、2030 年每四人一位 65 岁以上，<a href="https://www.agewellsg.gov.sg/about/">agewellsg.gov.sg</a></li>
+      <li>Annals Singapore，活跃乐龄中心从 119 个扩到 220 个，<a href="https://annals.edu.sg/singapore-active-ageing-centres-2-0-model/">annals.edu.sg</a></li>
+      <li>IMDA《Seniors Go Digital》，<a href="https://www.imda.gov.sg/how-we-can-help/seniors-go-digital">imda.gov.sg</a>；《Singapore Digital Society Report 2023》老人智能手机拥有率 89%，<a href="https://www.imda.gov.sg/-/media/imda/files/infocomm-media-landscape/research-and-statistics/singapore-digital-society-report/singapore-digital-society-report-2023.pdf">imda.gov.sg（PDF）</a></li>
+      <li>海峡时报，2022-10-04，约 19 万老人接受基础数字技能培训，<a href="https://www.straitstimes.com/singapore/politics/more-than-190000-seniors-trained-in-basic-digital-skills-under-govt-programme">straitstimes.com</a></li>
+      <li>Abd-alrazaq 等，严肃游戏改善认知障碍老人记忆的系统综述与元分析，JMIR Serious Games，2022，<a href="https://doi.org/10.2196/35202">doi.org/10.2196/35202</a></li>
+      <li>Yorozuya 等，数字游戏干预与养老院住民认知功能的单案例实验，BMC Geriatrics，2024，<a href="https://doi.org/10.1186/s12877-024-05011-3">doi.org/10.1186/s12877-024-05011-3</a></li>
+      <li>Lee 等，面向 50 岁以上人群的手机游戏设计指南，JMIR Serious Games，2021，<a href="https://doi.org/10.2196/24449">doi.org/10.2196/24449</a></li>
+      <li>数字游戏与老人孤独感：范围综述，Healthcare，2025，<a href="https://doi.org/10.3390/healthcare13172140">doi.org/10.3390/healthcare13172140</a></li>
+      <li>社交游戏降低老人孤独感：招募与流失分析，JMIR Serious Games，2024，<a href="https://doi.org/10.2196/52640">doi.org/10.2196/52640</a></li>
+      <li>CNN，2007-11-26，Brain Age 全球销量超过 1000 万份，<a href="https://www.cnn.com/2007/TECH/11/26/brain.training/">cnn.com</a></li>
+      <li>新京报，2024-05-27，小年糕一个月用户从 1000 万涨到 2000 万，<a href="https://m.bjnews.com.cn/detail/1716781717169953.html">bjnews.com.cn</a></li>
+      <li>21 世纪经济报道，2019-09-05，小年糕总用户超过 2 亿，<a href="https://m.21jingji.com/article/20190905/herald/a3825ab2cf2fab5dded149f55a66e22a_zaker.html">21jingji.com</a></li>
+      <li>澎湃新闻，2021-07-06，小年糕称 5 亿用户、千万日活，<a href="https://m.thepaper.cn/baijiahao_13411785">thepaper.cn</a></li>
+      <li>AnkeCare，2021-02-17，WaCare 在偏乡社区据点开线上课，<a href="https://www.ankecare.com/article/1157-23035">ankecare.com</a></li>
+      <li>App Store，WaCare 页面，1600+ 位线上专家、15 个长照领域，<a href="https://apps.apple.com/tw/app/id1476152634">apps.apple.com</a></li>
+      <li>Steam，《6栋301房》商店页，<a href="https://store.steampowered.com/app/1949010/">store.steampowered.com</a></li>
+      <li>百度百科，《6栋301房》，中国传媒大学毕业设计、2022-09-21 发售，<a href="https://baike.baidu.com/item/6%E6%A0%8B301%E6%88%BF/62014322">baike.baidu.com</a></li>
+      <li>NTU LILY《Silver Games》项目页，<a href="https://www.ntu.edu.sg/lily/research/silver-games">ntu.edu.sg/lily</a></li>
+      <li>NTU Research，2019-06-19，苗春燕与 LILY（65 位研究人员；AI 体感游戏用于帕金森、中风、失智的评估与康复），<a href="https://www.ntu.edu.sg/research/research-hub/news/detail/virtual-tool-real-impact-prof-miao-chunyan">ntu.edu.sg</a></li>
+      <li>Li、Erdt、Chen、Cao、Lee、Theng，体感游戏对老人社交影响的系统综述，JMIR，2018，<a href="https://doi.org/10.2196/10486">doi.org/10.2196/10486</a></li>
+      <li>西东京市，2024-11-26，健康 e スポーツ与效果验证（同代交流意愿 38.4%、每周外出 5 次以上 28%），<a href="https://prtimes.jp/main/html/rd/p/000000006.000133121.html">prtimes.jp</a></li>
+      <li>梅室博行研究者信息（KAKEN），<a href="https://nrid.nii.ac.jp/ja/nrid/1000080251651/">nrid.nii.ac.jp</a></li>
+      <li>梅室研究室，<a href="https://www.affectivelaboratory.org/">affectivelaboratory.org</a></li>
+      <li>国家统计局《中华人民共和国2025年国民经济和社会发展统计公报》，2026-02-28，60 岁及以上 32,338 万人、占 23.0%，<a href="https://www.stats.gov.cn/sj/zxfb/202602/t20260228_1962662.html">stats.gov.cn</a></li>
+      <li>国家发展改革委，2024-01-22，银发经济规模约 7 万亿元、占 GDP 约 6%，2035 年预计约 30 万亿元、占约 10%，<a href="https://www.ndrc.gov.cn/xwdt/spfg/zfzjt/202401/t20240122_1363612.html">ndrc.gov.cn</a></li>
+      <li>CNNIC 第 56 次《中国互联网络发展状况统计报告》，2025-07-21，60 岁及以上网民 1.61 亿、普及率 52.0%，<a href="http://finance.people.com.cn/n1/2025/0721/c1004-40526406.html">people.com.cn</a></li>
+      <li>CNNIC 第 57 次《中国互联网络发展状况统计报告》，2026-02，截至 2025 年末 60 岁及以上占 6 岁以上非网民的 53.6%，<a href="https://www.cnnic.net.cn/NMediaFile/2026/0304/MAIN1772588317069TUXN3827X8.pdf">cnnic.net.cn（PDF）</a></li>
+      <li>SWITCH Singapore，2016-10-26，NTU-UBC LILY 展台演示，<a href="https://www.youtube.com/watch?v=q-I1YyjWgdE">youtube.com</a></li>
+      <li>杭州网，2025-07-31，拱墅区养老服务中心的 VR 短片《时光简笔画》与“时光档案馆”（为百岁老人拍生活影像与家庭故事、360° 全景影像、已办十余场活动），<a href="https://ori.hangzhou.com.cn/content/content_9051307.htm">ori.hangzhou.com.cn</a></li>
+      <li>021 视频（新浪财经转载），2021-12-23，上海徐汇区第三老年福利院带老人用 VR “环游世界”，<a href="https://finance.sina.cn/2021-12-23/detail-ikyamrmz0689566.d.html">finance.sina.cn</a></li>
+      <li>中国日报网浙江频道，2022-08-17，杭州和睦社区：60 岁以上 2515 户、“阳光和睦”小程序与积分兑换（参与 283 人）、智能水表提醒、数字驾驶舱，<a href="https://zj.chinadaily.com.cn/a/202208/17/WS62fc6075a3101c3ee7ae4266.html">zj.chinadaily.com.cn</a></li>
+      <li>潮新闻（西湖区委宣传部供稿），2026-10-21，泰康之家·浙园开业：约 1300 个养老单元、一期约 650 户、累计 48 场活动、近 30 门课程、长寿社区智慧平台与定位报警卡；西湖区 3 个体验中心服务 12 万人次、翠苑一区 200 名高龄独居老人监测，<a href="https://tidenews.com.cn/tmh_news.html?id=6ad84b69be449b000199c8d3">tidenews.com.cn</a></li>
+      <li>人民网上海频道，2024-08-19，上海“一键叫车”智慧屏点位千余个、记者蹲点回访遇冷（积灰、字太小、绑定步骤多、“一键通”无人接听），<a href="http://sh.people.com.cn/n2/2024/0819/c176737-40949057.html">sh.people.com.cn</a></li>
+    </ol>
+    <p class="img-note">图片：Brain Age 封面来自 Wikipedia（合理使用）；小年糕配图来自新京报 2024-05-27 报道；WaCare 现场照片来自 AnkeCare 2021-02-17 报道；《6栋301房》画面来自 Steam 商店页；LILY 游戏画面来自 NTU LILY 官网；西东京市活动照片来自该市 2024-11-26 新闻稿。视频封面与片段来自 SWITCH Singapore 的 LILY 展台视频。“一个老人的下午”五张配图依次来自：潮新闻（浙江在线图片库）2025 年 8 月“时光档案馆”报道配图；021 视频 2021 年 12 月上海徐汇养老院报道的视频帧（保留原字幕）；中国日报网 2022-08-17 和睦社区报道配图；潮新闻 2026-10-21 泰康之家·浙园实景（西湖区委宣传部供图）；新浪 2021-06-16 一键叫车智慧屏进社区报道配图。“陈阿姨的下午”五张是 AI 绘制的示意图，画的是虚构人物与设想中的场景，不对应任何真实个人、机构或现场，图中不含文字。图片与视频仅作案例说明，版权归原作者。</p>
+    <p class="sign">幕景宇宙 · 杭州 · 丁科智 / 林丽丽 · 2026 年 11 月</p>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="查看大图">
+  <button class="lightbox-close" type="button">关闭 ×</button>
+  <button class="lb-arrow lb-prev" type="button" aria-label="上一张">‹</button>
+  <button class="lb-arrow lb-next" type="button" aria-label="下一张">›</button>
+  <figure>
+    <div id="lb-media"></div>
+    <figcaption id="lb-cap"></figcaption>
+  </figure>
+</div>
+<script>
+(() => {
+  const lb = document.getElementById('lightbox');
+  const box = document.getElementById('lb-media');
+  const cap = document.getElementById('lb-cap');
+  const groups = [...document.querySelectorAll('.work-media, .case-media')].map(f =>
+    [...f.querySelectorAll('.work-shot, .thumb, .case-shot')]
+  );
+  let items = [];
+  let idx = 0;
+  let lastFocus = null;
+
+  const kindOf = el => el.dataset.kind || (/\.mp4$/i.test(el.dataset.full) ? 'video' : 'image');
+
+  function render() {
+    const el = items[idx];
+    if (!el) return;
+    box.textContent = '';
+    if (kindOf(el) === 'video') {
+      const v = document.createElement('video');
+      v.src = el.dataset.full;
+      v.muted = true;
+      v.controls = true;
+      v.autoplay = true;
+      v.loop = true;
+      v.playsInline = true;
+      box.appendChild(v);
+    } else {
+      const img = document.createElement('img');
+      img.src = el.dataset.full;
+      img.alt = el.querySelector('img')?.alt || '';
+      box.appendChild(img);
+    }
+    cap.textContent = el.dataset.cap || '';
+    lb.classList.toggle('no-nav', items.length < 2);
+  }
+
+  function open(el) {
+    const group = groups.find(g => g.includes(el)) || [el];
+    items = group;
+    idx = group.indexOf(el);
+    lastFocus = el;
+    render();
+    lb.classList.add('on');
+    document.body.style.overflow = 'hidden';
+    lb.querySelector('.lightbox-close').focus();
+  }
+
+  function close() {
+    lb.classList.remove('on');
+    document.body.style.overflow = '';
+    box.textContent = '';
+    lastFocus?.focus();
+  }
+
+  function step(d) {
+    if (items.length < 2) return;
+    idx = (idx + d + items.length) % items.length;
+    render();
+  }
+
+  document.querySelectorAll('.work-shot, .thumb, .case-shot').forEach(el => {
+    el.addEventListener('click', () => open(el));
+  });
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.querySelector('.lb-prev').addEventListener('click', () => step(-1));
+  lb.querySelector('.lb-next').addEventListener('click', () => step(1));
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('on')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(({ target: v, isIntersecting }) => {
+      if (isIntersecting) {
+        if (!v.src) v.src = v.dataset.src;
+        if (!reduce) v.play().catch(() => {});
+      } else {
+        v.pause();
+      }
+    });
+  }, { rootMargin: '320px 0px', threshold: 0.06 });
+  document.querySelectorAll('.work-shot video').forEach(v => { v.muted = true; io.observe(v); });
+})();
+</script>
+</body>
+</html>
